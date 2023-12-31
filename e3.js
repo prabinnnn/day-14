@@ -3,11 +3,8 @@ let mark = {
   rabin: 56,
   heman: 4,
 };
-for (let i = 0; i < Object.keys(marks).length; i++) {
+for (let i = 0; i < Object.keys(mark).length; i++) {
   console.log(
-    "the marks of" +
-      Object.keys(marks)[i] +
-      "are" +
-      marks(Object.keys(marks)[i])
+    "the mark of" + Object.keys(mark)[i] + "are = " + mark[Object.keys(mark)[i]]
   );
 }
