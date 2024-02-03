@@ -1,11 +1,13 @@
 const passwordgenerate = (l) => {
-  const charstr = "";
-  const count = 0;
+  let charstr = "";
   const string = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz";
-  for (let i = 0; i <= l; i++) {
+
+  for (let i = 0; i < l; i++) {
     charstr += string.charAt(Math.floor(Math.random() * string.length));
-    count++;
   }
+
   return charstr;
 };
-passwordgenerate();
+
+const password = passwordgenerate(10);
+console.log(password);
